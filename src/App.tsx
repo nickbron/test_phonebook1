@@ -18,7 +18,9 @@ export default function App() {
           <Route path="/" exact>
             <HomeView />
           </Route>
-
+          <Route path="/test_myphonebook" exact>
+            <HomeView />
+          </Route>
           <Route path="/contacts" exact>
             <ContactsView />
           </Route>
