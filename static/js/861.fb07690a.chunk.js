@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktest_myphonebook1=self.webpackChunktest_myphonebook1||[]).push([[861],{861:function(e,n,t){t.r(n);var o=t(184);n.default=function(){return(0,o.jsx)("div",{children:(0,o.jsx)("h1",{children:"404 Page Not Found "})})}}}]);
-//# sourceMappingURL=861.fb07690a.chunk.js.map
