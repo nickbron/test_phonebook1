@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/316.037e38c1.chunk.js","mappings":"8IAQA,UARkB,WAChB,OACE,0BACE","sources":["Views/AboutView/AboutView.tsx"],"sourcesContent":["const AboutView = () => {\n  return (\n    <div>\n      <h1>About </h1>\n    </div>\n  );\n};\n\nexport default AboutView;\n"],"names":[],"sourceRoot":""}
