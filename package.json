@@ -1,6 +1,6 @@
 {
-  "name": "test_myphonebook",
-  "homepage": "https://nickbron.github.io/test_myphonebook",
+  "name": "test_phonebook1",
+  "homepage": "https://nickbron.github.io/test_phonebook1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
