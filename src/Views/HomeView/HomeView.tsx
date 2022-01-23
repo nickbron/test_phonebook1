@@ -3,7 +3,7 @@ const HomeView = () => {
   return (
     <section className={styles.hero}>
       <div>
-        <h1>Welcome to Phonebook</h1>
+        <h1 className={styles.text}> Welcome to Phonebook</h1>
       </div>
     </section>
   );
