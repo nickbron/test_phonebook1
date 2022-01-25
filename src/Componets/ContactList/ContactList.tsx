@@ -49,7 +49,7 @@ export const ContactList = ({ result }: Props) => {
               <span>{contact.name}: </span>
               <span>{contact.phone}</span>
               <Button
-                className="my-3"
+                className="my-10"
                 color="danger"
                 size="sm"
                 onClick={() => deleteContact(contact.id)}

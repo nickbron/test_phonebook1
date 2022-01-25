@@ -40,12 +40,12 @@ export const ContactForm = ({ onSubmit }: Props) => {
   };
 
   return (
-    <div>
-      <div className=" input-group-lg">
+    <div className="form-group">
+      <div className=" input-group-lg ">
         <form onSubmit={handleSubmit}>
           <Input
             type="text"
-            className="form-control w-50"
+            className="form-control w-50 my-sm-3"
             name="name"
             onChange={handleChange}
             value={name}
@@ -56,7 +56,7 @@ export const ContactForm = ({ onSubmit }: Props) => {
           <Input
             type="tel"
             name="number"
-            className="form-control w-50 my-sm-3"
+            className="form-control w-50 my-sm-3 "
             onChange={handleChange}
             value={phone}
             placeholder="Input Phone"
@@ -65,7 +65,7 @@ export const ContactForm = ({ onSubmit }: Props) => {
             required
           />
 
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary w-50 col-sm-10 ">
             Add contact
           </button>
         </form>

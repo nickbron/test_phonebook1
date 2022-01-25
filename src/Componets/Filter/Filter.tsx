@@ -7,12 +7,13 @@ export const Filter = () => {
 
   return (
     <>
-      <div className=" input-group-lg w-50 my-sm-3">
-        Find contacts by name:
+      <div className="form-group  my-sm-4 ">
+        <label htmlFor="inputFilter"> Find contacts by name:</label>
         <input
           type="text"
-          className="form-control "
+          className="form-control w-50 "
           name="filter"
+          id="inputFilter"
           autoComplete="off"
           onChange={(e) => dispatch(filterItem(e.target.value))}
           // value={filter}
