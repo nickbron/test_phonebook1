@@ -1,12 +1,9 @@
 import { useDispatch } from "react-redux";
-import React, { useState } from "react";
 import { filterItem } from "../../redux/contacts-reducer";
 import { AppDispatch } from "../../redux/store";
 
 export const Filter = () => {
-  const [filter, setFilter] = useState("");
   const dispatch = useDispatch<AppDispatch>();
-  dispatch(filterItem(filter));
 
   return (
     <>
@@ -17,8 +14,8 @@ export const Filter = () => {
           className="form-control "
           name="filter"
           autoComplete="off"
-          onChange={(e) => setFilter(e.target.value)}
-          value={filter}
+          onChange={(e) => dispatch(filterItem(e.target.value))}
+          // value={filter}
           placeholder="Search Value"
         />
       </div>

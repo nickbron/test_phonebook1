@@ -23,13 +23,17 @@ export const ContactList = ({ result }: Props) => {
 
   const searchValue = useSelector((state: RootState) => state);
 
-  if (data) {
+  if (data && searchValue.reducerFilter.length > 0) {
     const normalizedFilter = searchValue.reducerFilter.map((id) =>
       id.name.toLowerCase()
     );
-    const b = normalizedFilter[normalizedFilter.length - 1];
-
-    newData = data.filter((id) => id.name.toLowerCase().includes(b));
+    newData = data.filter((id) =>
+      id.name
+        .toLowerCase()
+        .includes(normalizedFilter[normalizedFilter.length - 1])
+    );
+  } else {
+    newData = data;
   }
 
   return (
